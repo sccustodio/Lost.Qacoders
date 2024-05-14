@@ -1,6 +1,6 @@
 ## Teste de Front-end automação, cadastro e pesquisa
 
-Esse é um repositório que contém a automação do teste de pesquisa e novo cadastro referente a plataforma de estudantes da Qa.Coders https://automacao.qacoders-academy.com.br/login
+Esse é um repositório que contém a automação do teste de pesquisa e novo cadastro referente a plataforma de estudantes da **Qa.Coders** **https://automacao.qacoders-academy.com.br/login**
 
 Os sub-tópicos abaixo descrevem algumas decisões tomadas na estruturação do projeto.
 
@@ -15,16 +15,14 @@ Os sub-tópicos abaixo descrevem algumas decisões tomadas na estruturação do 
 - Robot Framework - https://robotframework.org/
 - VScode - https://code.visualstudio.com/
 - Phyton - https://www.python.org/
-- Chrome -
 
 ## Teste automatizados
 
 Testes para validar login na plataforma de alunos do Qa.Coders, também é testado o campo de pesquisa e o cadastro de um novo usuário.
 
 ## Notas gerias
-- O teste foi executado no navegador Chrome, mas pode ser executado em um navegador de sua preferencia, porém a primeira keyword precisa ser trocada para o navegador de sua máquina, conforme abaixo:
+- O teste foi executado no **navegador Chrome**, mas pode ser executado em um navegador de sua preferencia, porém a primeira keyword precisa ser trocada para o navegador de sua máquina, conforme abaixo:
 
-![Abrir navegador](file:///C:/Users/sccus/OneDrive/%C3%81rea%20de%20Trabalho/navegador.jpg)
 Exemplo:
 
     Open Browser browser=nome do navegador novo
@@ -35,6 +33,9 @@ Exemplo:
 
 Então o código ficará dessa forma:
 
-![Sleep](file:///C:/Users/sccus/OneDrive/%C3%81rea%20de%20Trabalho/sleep.jpg)
+    Passo 4 - Digitar um e-mail
+    Wait Until Element Is Visible locator=${emailInput}
+    Input Text locator=${emailInput} text=tobiasdasilva@qacoders.com.br  
+    Sleep 3s
 
 - O teste estará pronto para ser executado. 
